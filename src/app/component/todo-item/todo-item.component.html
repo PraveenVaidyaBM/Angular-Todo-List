@@ -1,0 +1,7 @@
+
+<div [ngClass]="setClasses()"> 
+        <!-- to select the checkbox containing todo list -->
+       <input (change)="onToggle(todo)"  type="checkbox"> {{ todo.title }}
+       <!-- to delete the selected todo list -->
+       <button (click)="onDelete(todo)" class="del"></button>
+</div>

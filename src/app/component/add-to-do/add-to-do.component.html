@@ -1,0 +1,5 @@
+<!-- Component which contains the input field and submit button to add todo -->
+<form class="form" (ngSubmit)="onSubmit()">
+    <input type="text" class="textfield" name="title" [(ngModel)]="title" placeholder="add To Do">
+    <input type="submit" value="Submit" class="btn">
+</form>

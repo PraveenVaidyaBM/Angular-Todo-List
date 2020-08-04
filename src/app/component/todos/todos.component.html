@@ -1,0 +1,7 @@
+<!-- displaying all the todo items and deleting the item in case user want to delete -->
+<app-add-to-do (addTodo)="addTodo($event)"></app-add-to-do>
+<app-todo-item 
+*ngFor="let todo of todos" 
+[todo]="todo"
+(deleteTodo)="deleteTodo($event)">
+ </app-todo-item>
